@@ -9,7 +9,8 @@
   - Allowing users to save presets of render settings from another project to be used in another.
   - Automatically scrubbing video reference objects so they start at the timestamp the user is currently looking at.
   - Automatically saving image sequence renders in its own folder, and allowing users to resume rendering where they left off if Blender crashes or if the user pauses the render. 
-- A pomodoro timer
+- A graphical pomodoro timer
+- A graphical app that counts the days, hours, minutes and seconds before a user inputted date and time. 
 
 ## If you plan to collaborate with one or two classmates, what are their names?
 
