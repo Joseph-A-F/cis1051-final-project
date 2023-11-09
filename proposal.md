@@ -6,7 +6,7 @@
 
 ## In just a sentence or two, summarize your project. (E.g., "A website that lets you buy and sell stocks.")
 
-A fighting game prototype with an ai opponent. 
+A fighting game prototype with an AI opponent. 
 
 ## In a paragraph or more, detail your project. What will your software do? What features will it have? How will it be executed?
 
@@ -26,8 +26,8 @@ A better outcome would have the Player's attacks added along with an Opponent th
 
 ### In a sentence (or list of features), define a BEST outcome for your final project. I.e., what do you HOPE to accomplish before the final project's deadline?
 
-What I hope to accomplish by the end of the project's deadline is a prototype that is more game than a test demo, with a working AI opponent. 
+What I hope to accomplish by the end of the project's deadline is a prototype that is more game than a test demo, with a working AI opponent, potentially multiple player characters and multiple stages. 
 
 ## In a paragraph or more, outline your next steps. What new skills will you need to acquire? What topics will you need to research? If working with one of two classmates, who will do what?
 
-TODO
+While I have made some progress in learning the basics of Pygame there are still a lot more that I need to learn. I have learned the basics of player movement including gravity, but I still haven't figured out the best way to handle collisions especially with platforms. I also need to research the best way to do AI opponents, and figure out how to do attacks for the Player. I also need to work on a way to generate the stages for the game, but I am close to having a workable solution at this point.   
