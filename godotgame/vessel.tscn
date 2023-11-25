@@ -1,0 +1,151 @@
+[gd_scene load_steps=18 format=3 uid="uid://cxpcve6i3gb5l"]
+
+[ext_resource type="Texture2D" uid="uid://5bnxiolr5d1m" path="res://playersprites/frame0001.png" id="2_x53os"]
+[ext_resource type="Texture2D" uid="uid://clv25o4fi7oas" path="res://playersprites/frame0002.png" id="3_jlvsy"]
+[ext_resource type="Texture2D" uid="uid://ceyltg5wr8i5g" path="res://playersprites/frame0003.png" id="3_psdrj"]
+[ext_resource type="Texture2D" uid="uid://b7bmew1dja0oa" path="res://playersprites/frame0004.png" id="4_rix0c"]
+[ext_resource type="Texture2D" uid="uid://cxnkfeygisdnv" path="res://playersprites/frame0000.png" id="4_yk1ba"]
+[ext_resource type="Texture2D" uid="uid://cx2iv6jhgfcee" path="res://playersprites/frame0005.png" id="5_hif61"]
+[ext_resource type="Texture2D" uid="uid://5kiuv7xhnj3r" path="res://playersprites/frame0006.png" id="6_g0now"]
+[ext_resource type="Texture2D" uid="uid://c2x0mtrav6pfh" path="res://playersprites/frame0007.png" id="7_aanky"]
+[ext_resource type="Texture2D" uid="uid://c68gd81wlolen" path="res://playersprites/frame0008.png" id="8_fnyly"]
+[ext_resource type="Texture2D" uid="uid://cvmu3kojtktlw" path="res://playersprites/frame0009.png" id="9_xxx58"]
+[ext_resource type="Texture2D" uid="uid://lvju4fwunabw" path="res://playersprites/frame0010.png" id="10_sfwjs"]
+
+[sub_resource type="GDScript" id="GDScript_4s48v"]
+script/source = "extends CharacterBody2D
+
+
+const SPEED = 50.0
+const JUMP_VELOCITY = -400.0
+
+# Get the gravity from the project settings to be synced with RigidBody nodes.
+var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
+
+
+func _physics_process(delta):
+	# Add the gravity.
+	if not is_on_floor():
+		velocity.y += gravity * delta
+
+	# Handle Jump.
+	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var direction = Input.get_axis(\"ui_left\", \"ui_right\")
+	if direction:
+		velocity.x += direction * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+	
+	
+	
+	
+	#flips
+	if velocity.x < 0:
+		$AnimatedSprite2D.flip_h = true 
+	elif velocity.x > 0: 
+		$AnimatedSprite2D.flip_h = false
+		
+	# speed 
+	if abs(velocity.x) > 500:
+		$AnimatedSprite2D.play(\"2run\")
+	elif abs(velocity.x) > 0:
+		$AnimatedSprite2D.play(\"1walk\")
+	else:
+		$AnimatedSprite2D.play(\"default\")
+	
+
+	move_and_slide()
+"
+
+[sub_resource type="Animation" id="Animation_jhoc1"]
+resource_name = "default"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mb7e5"]
+_data = {
+"default": SubResource("Animation_jhoc1")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hvspq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_x53os")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jlvsy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_psdrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rix0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hif61")
+}],
+"loop": true,
+"name": &"1walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_g0now")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_aanky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fnyly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xxx58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_sfwjs")
+}],
+"loop": true,
+"name": &"2run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_yk1ba")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wacqt"]
+radius = 35.0
+height = 158.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hoibk"]
+radius = 36.1248
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(2.08165e-12, 2.08165e-12)
+script = SubResource("GDScript_4s48v")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_mb7e5")
+}
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_hvspq")
+animation = &"2run"
+
+[node name="bodyhitbox" type="CollisionShape2D" parent="."]
+position = Vector2(-0.0700073, -2.08165e-12)
+shape = SubResource("CapsuleShape2D_wacqt")
+
+[node name="hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(80, -2.08165e-12)
+shape = SubResource("CircleShape2D_hoibk")
+debug_color = Color(0.988235, 0, 0.298039, 0.419608)
