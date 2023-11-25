@@ -1,2 +1,3 @@
 # cis1051-final-project
-placeholder
+
+project files are inside the godot game folder. 
