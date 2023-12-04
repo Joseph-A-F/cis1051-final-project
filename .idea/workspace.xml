@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a76291ce-1626-41ab-bbbf-f801c5ea4a09" name="Changes" comment="player movement, animations and basic hitbox">
-      <change afterPath="$PROJECT_DIR$/godotgame/opponent.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/godotgame/opponent.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a76291ce-1626-41ab-bbbf-f801c5ea4a09" name="Changes" comment="further updates and added status.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/godotgame/node_2d.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/node_2d.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/godotgame/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/project.godot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/godotgame/vessel.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/vessel.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/godotgame/opponent.gd" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/opponent.gd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +19,7 @@
         <option value="Joseph-A-F &lt;149717113+joseph-a-f@users.noreply.github.com&gt;" />
       </list>
     </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -64,6 +59,11 @@
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/nausetjf/PycharmProjects/cis1051-final-project",
     "settings.editor.selected.configurable": "preferences.lookFeel"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -147,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700933902730</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="further updates and added status.md">
+      <option name="closed" value="true" />
+      <created>1701113861315</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701113861315</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +173,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="player movement, animations and basic hitbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="player movement, animations and basic hitbox" />
+    <MESSAGE value="further updates and added status.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="further updates and added status.md" />
   </component>
 </project>
