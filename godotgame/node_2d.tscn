@@ -1,14 +1,66 @@
-[gd_scene load_steps=4 format=3 uid="uid://cq51pu54ndup8"]
+[gd_scene load_steps=10 format=3 uid="uid://cq51pu54ndup8"]
 
 [ext_resource type="PackedScene" uid="uid://cxpcve6i3gb5l" path="res://vessel.tscn" id="1_u7vhx"]
 [ext_resource type="PackedScene" uid="uid://76qt2u6fl1id" path="res://opponent.tscn" id="2_43co5"]
+[ext_resource type="Script" path="res://Camera2D.gd" id="3_vnhpk"]
+[ext_resource type="Script" path="res://OpponentDamage.gd" id="4_6wgml"]
+[ext_resource type="Script" path="res://playerdamage.gd" id="4_bb4qf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ptbj1"]
 size = Vector2(1328, 130.5)
 
+[sub_resource type="Animation" id="Animation_2q7vs"]
+resource_name = "hit"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position.x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1.41421, 1),
+"update": 0,
+"values": [null, null]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(0.203063, 1, 8.57418),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(100, 2.08165e-12), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_7qha3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.08165e-12, 2.08165e-12)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6q4j8"]
+_data = {
+"RESET": SubResource("Animation_7qha3"),
+"hit": SubResource("Animation_2q7vs")
+}
+
 [node name="Node2D" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_u7vhx")]
+[node name="player" parent="." instance=ExtResource("1_u7vhx")]
 position = Vector2(623, 81)
 
 [node name="Area2D" type="StaticBody2D" parent="."]
@@ -19,5 +71,58 @@ disable_mode = 2
 position = Vector2(-1, -158.25)
 shape = SubResource("RectangleShape2D_ptbj1")
 
-[node name="CharacterBody2D2" parent="." instance=ExtResource("2_43co5")]
+[node name="CharacterBody2D2" parent="." groups=["hit"] instance=ExtResource("2_43co5")]
 position = Vector2(882, 84)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(611, 104)
+offset = Vector2(2.08165e-12, 2.08165e-12)
+script = ExtResource("3_vnhpk")
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Camera2D"]
+offset_left = -562.0
+offset_top = -322.0
+offset_right = -478.0
+offset_bottom = -270.0
+scale = Vector2(4.12, 4.12)
+text = "Player"
+fit_content = true
+tab_size = 24
+
+[node name="PlayerDamage" type="RichTextLabel" parent="Camera2D/RichTextLabel2"]
+layout_mode = 0
+offset_left = 9.22332
+offset_top = 22.8155
+offset_right = 88.2233
+offset_bottom = 68.8155
+text = "Player"
+fit_content = true
+tab_size = 24
+script = ExtResource("4_bb4qf")
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="Camera2D"]
+offset_left = 225.0
+offset_top = -324.0
+offset_right = 309.0
+offset_bottom = -272.0
+scale = Vector2(4.12, 4.12)
+text = "Opponent
+"
+fit_content = true
+tab_size = 24
+
+[node name="OpponentDamage" type="RichTextLabel" parent="Camera2D/RichTextLabel3"]
+layout_mode = 0
+offset_left = 31.5534
+offset_top = 24.5146
+offset_right = 115.553
+offset_bottom = 76.5146
+text = "Test"
+fit_content = true
+tab_size = 24
+script = ExtResource("4_6wgml")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera2D"]
+libraries = {
+"": SubResource("AnimationLibrary_6q4j8")
+}

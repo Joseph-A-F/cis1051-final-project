@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a76291ce-1626-41ab-bbbf-f801c5ea4a09" name="Changes" comment="player movement, animations and basic hitbox">
-      <change afterPath="$PROJECT_DIR$/godotgame/opponent.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/godotgame/opponent.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a76291ce-1626-41ab-bbbf-f801c5ea4a09" name="Changes" comment="Completed a basic hitbox and attack system and created a basic HUD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/godotgame/node_2d.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/node_2d.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/godotgame/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/godotgame/opponent.gd" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/opponent.gd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/godotgame/vessel.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/vessel.tscn" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +21,7 @@
         <option value="Joseph-A-F &lt;149717113+joseph-a-f@users.noreply.github.com&gt;" />
       </list>
     </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -55,17 +52,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/nausetjf/PycharmProjects/cis1051-final-project",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nausetjf/PycharmProjects/cis1051-final-project&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Python&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -147,7 +149,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700933902730</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="further updates and added status.md">
+      <option name="closed" value="true" />
+      <created>1701113861315</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701113861315</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Completed a basic hitbox and attack system and created a basic HUD">
+      <option name="closed" value="true" />
+      <created>1701706685293</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701706685293</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +183,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="player movement, animations and basic hitbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="player movement, animations and basic hitbox" />
+    <MESSAGE value="further updates and added status.md" />
+    <MESSAGE value="Completed a basic hitbox and attack system and created a basic HUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed a basic hitbox and attack system and created a basic HUD" />
   </component>
 </project>
