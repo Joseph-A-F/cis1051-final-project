@@ -11,5 +11,5 @@ func _process(delta):
 	if $"../../../player" != null:
 		text = str($"../../../player".damage)
 	else:
-		text = "ded"
+		text = ""
 	pass

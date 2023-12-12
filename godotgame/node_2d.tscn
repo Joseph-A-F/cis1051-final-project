@@ -9,6 +9,21 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ptbj1"]
 size = Vector2(1328, 130.5)
 
+[sub_resource type="Animation" id="Animation_7qha3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.08165e-12, 2.08165e-12)]
+}
+
 [sub_resource type="Animation" id="Animation_2q7vs"]
 resource_name = "hit"
 length = 0.7
@@ -37,21 +52,6 @@ tracks/1/keys = {
 "values": [Vector2(0, 0), Vector2(100, 2.08165e-12), Vector2(0, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_7qha3"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:offset")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(2.08165e-12, 2.08165e-12)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6q4j8"]
 _data = {
 "RESET": SubResource("Animation_7qha3"),
@@ -61,7 +61,7 @@ _data = {
 [node name="Node2D" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("1_u7vhx")]
-position = Vector2(623, 81)
+position = Vector2(283, 163)
 
 [node name="Area2D" type="StaticBody2D" parent="."]
 position = Vector2(623, 630.25)
@@ -71,8 +71,14 @@ disable_mode = 2
 position = Vector2(-1, -158.25)
 shape = SubResource("RectangleShape2D_ptbj1")
 
+[node name="ColorRect" type="ColorRect" parent="Area2D/CollisionShape2D"]
+offset_left = -649.0
+offset_top = -62.0
+offset_right = 657.0
+offset_bottom = 65.0
+
 [node name="CharacterBody2D2" parent="." groups=["hit"] instance=ExtResource("2_43co5")]
-position = Vector2(882, 84)
+position = Vector2(898, 164)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(611, 104)
@@ -91,33 +97,33 @@ tab_size = 24
 
 [node name="PlayerDamage" type="RichTextLabel" parent="Camera2D/RichTextLabel2"]
 layout_mode = 0
-offset_left = 9.22332
-offset_top = 22.8155
-offset_right = 88.2233
-offset_bottom = 68.8155
+offset_left = 0.970875
+offset_top = 24.5146
+offset_right = 79.9709
+offset_bottom = 70.5146
 text = "Player"
 fit_content = true
 tab_size = 24
 script = ExtResource("4_bb4qf")
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="Camera2D"]
-offset_left = 225.0
+offset_left = 158.0
 offset_top = -324.0
-offset_right = 309.0
+offset_right = 258.0
 offset_bottom = -272.0
 scale = Vector2(4.12, 4.12)
-text = "Opponent
+text = "Sandbag 
 "
 fit_content = true
 tab_size = 24
 
 [node name="OpponentDamage" type="RichTextLabel" parent="Camera2D/RichTextLabel3"]
 layout_mode = 0
-offset_left = 31.5534
-offset_top = 24.5146
-offset_right = 115.553
-offset_bottom = 76.5146
-text = "Test"
+offset_left = 55.8252
+offset_top = 24.7573
+offset_right = 139.825
+offset_bottom = 76.7573
+text = "Opponent"
 fit_content = true
 tab_size = 24
 script = ExtResource("4_6wgml")

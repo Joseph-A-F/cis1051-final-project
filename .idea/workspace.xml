@@ -4,11 +4,216 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a76291ce-1626-41ab-bbbf-f801c5ea4a09" name="Changes" comment="Completed a basic hitbox and attack system and created a basic HUD">
+    <list default="true" id="a76291ce-1626-41ab-bbbf-f801c5ea4a09" name="Changes" comment="updates">
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0000.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0001.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0002.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0003.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0004.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0005.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0005.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0006.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0006.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0007.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0007.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0008.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0008.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0009.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0009.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0010.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0010.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0011.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0011.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0012.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0012.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0013.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0013.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0014.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0014.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0015.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0015.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0016.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0016.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0017.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0017.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0018.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0018.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0019.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0019.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0020.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0020.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0021.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0021.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0022.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0022.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0023.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0023.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0024.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0025.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0025.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0026.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0026.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0027.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0027.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0028.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0028.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0029.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0029.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0030.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0030.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0031.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0031.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0032.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0032.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0033.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0033.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0034.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0034.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0035.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0035.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0036.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0036.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0037.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0037.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0038.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0038.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0039.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0039.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0040.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0040.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0041.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0041.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0042.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0042.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0043.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0043.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0044.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0044.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0045.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0045.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0046.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0046.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0047.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0047.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0048.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0048.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0049.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0049.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0050.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0050.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0051.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0051.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0052.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0052.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0053.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0053.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0054.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0054.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0055.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0055.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0056.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0056.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0057.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0057.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0058.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0058.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0059.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0059.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0060.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0060.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0061.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0061.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0062.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0062.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0063.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0063.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0064.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0064.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0065.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0065.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0066.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0066.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0067.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0067.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0068.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0068.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0069.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0069.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0070.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0070.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0071.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0071.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0072.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0072.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0073.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0073.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0074.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0074.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0075.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0075.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0076.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0076.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0077.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0077.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0078.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0078.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0079.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0079.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0080.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0080.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0081.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0081.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0082.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0083.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0083.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0084.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0084.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0085.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0085.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0086.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0086.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0087.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0087.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0088.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0088.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0089.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0089.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0090.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0090.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0091.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0091.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0092.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0092.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0093.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0093.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0094.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0094.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0095.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0095.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0096.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0096.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0097.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0097.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0098.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0098.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0099.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0099.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/godotgame/test153-animation/frame0100.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/godotgame/Camera2D.gd" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/Camera2D.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/godotgame/OpponentDamage.gd" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/OpponentDamage.gd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/godotgame/node_2d.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/node_2d.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/godotgame/opponent.gd" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/opponent.gd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/godotgame/vessel.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/vessel.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/godotgame/opponent.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/opponent.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/godotgame/playerdamage.gd" beforeDir="false" afterPath="$PROJECT_DIR$/godotgame/playerdamage.gd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +370,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701706685293</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="updates">
+      <option name="closed" value="true" />
+      <created>1701781253523</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701781253523</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +398,7 @@
     <MESSAGE value="player movement, animations and basic hitbox" />
     <MESSAGE value="further updates and added status.md" />
     <MESSAGE value="Completed a basic hitbox and attack system and created a basic HUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed a basic hitbox and attack system and created a basic HUD" />
+    <MESSAGE value="updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates" />
   </component>
 </project>

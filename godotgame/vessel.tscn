@@ -54,7 +54,8 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	
 	#hitbox position
-	$HitBox.position.x = direction*hitboxreach
+	if direction != 0:
+		$HitBox.position.x = direction*hitboxreach
 
 	#flips
 	if velocity.x < 0:
@@ -177,7 +178,6 @@ libraries = {
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_hvspq")
-animation = &"2run"
 
 [node name="bodyhitbox" type="CollisionShape2D" parent="."]
 position = Vector2(-0.0700073, -2.08165e-12)

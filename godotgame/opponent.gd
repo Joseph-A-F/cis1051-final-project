@@ -18,17 +18,22 @@ func _process(delta):
 
 func hurt(directionhit,speedy):
 	#print("jndfsnjfsd")
-	$Sprite2D/Polygon2D.color = "blue"
+	#$Sprite2D/Polygon2D.color = "blue"
 	velocity.y -= 1000 
 	position.y -= 20
 	damage += 1
+	
 	if directionhit:
 		position.x += 50*damage
 		velocity.x += 400/2*damage
 	else:
+		
 		position.x -= 50*damage
 		velocity.x -= 400/2*damage
 			
+	##if !is_on_floor():
+	##	rotation += 1
+	
 	#camera
 	$"../Camera2D/AnimationPlayer".play("hit")
 	
@@ -36,9 +41,21 @@ func hurt(directionhit,speedy):
 
 func _physics_process(delta):
 	# Add the gravity.
+	$AnimatedSprite2D.play("default")
 	if not is_on_floor():
 		velocity.y += gravity * delta
-
+		
+	else:
+		$AnimatedSprite2D.play("default")
+	
+	if velocity.x < 0:
+		$AnimatedSprite2D.flip_h = true
+		$AnimatedSprite2D.play("new_animation")
+	elif velocity.x > 0:
+		$AnimatedSprite2D.flip_h = false
+		$AnimatedSprite2D.play("new_animation")
+		
+	
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	velocity.x /= SPEED

@@ -10,5 +10,5 @@ func _process(delta):
 	if $"../../../CharacterBody2D2" != null:
 		text = str($"../../../CharacterBody2D2".damage)
 	else:
-		text = "ded"
+		text = ""
 	pass
